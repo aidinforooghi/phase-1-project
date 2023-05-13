@@ -50,3 +50,8 @@ h1 {
 .movie-card:hover {
   transform: scale(1.05);
 }
+.movie-card h2 {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #333;
+}
