@@ -15,3 +15,16 @@ async function fetchMovies(searchTerm) {
     console.log('Error:', error);
   }
 }
+// Function to fetch detailed movie information from the API
+async function fetchMovieDetails(imdbID) {
+  const apiKey = '2c6a402c'; 
+  const url = `https://www.omdbapi.com/?i=${imdbID}&apikey=${apiKey}`;
+
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.log('Error:', error);
+  }
+}
