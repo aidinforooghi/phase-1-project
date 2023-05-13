@@ -55,3 +55,15 @@ h1 {
   font-size: 18px;
   color: #333;
 }
+.movie-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
