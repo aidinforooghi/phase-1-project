@@ -15,6 +15,7 @@ async function fetchMovies(searchTerm) {
     console.log('Error:', error);
   }
 }
+
 // Function to fetch detailed movie information from the API
 async function fetchMovieDetails(imdbID) {
   const apiKey = '2c6a402c'; 
@@ -28,6 +29,7 @@ async function fetchMovieDetails(imdbID) {
     console.log('Error:', error);
   }
 }
+
 // Function to display movie data 
 function displayMovies(movies) {
   moviesContainer.innerHTML = '';
@@ -38,7 +40,8 @@ function displayMovies(movies) {
     moviesContainer.appendChild(message);
     return;
   }
-movies.forEach(async movie => {
+
+  movies.forEach(async movie => {
     const movieCard = document.createElement('div');
     movieCard.classList.add('movie-card');
 
@@ -59,7 +62,8 @@ movies.forEach(async movie => {
     const poster = document.createElement('img');
     poster.src = movie.Poster === 'N/A' ? 'no-poster.jpg' : movie.Poster;
     poster.alt = movie.Title;
-movieCard.appendChild(title);
+
+    movieCard.appendChild(title);
     movieCard.appendChild(year);
     movieCard.appendChild(imdbLink);
     movieCard.appendChild(poster);
@@ -67,6 +71,8 @@ movieCard.appendChild(title);
     moviesContainer.appendChild(movieCard);
   });
 }
+
+
 searchButton.addEventListener('click', async () => {
   const searchTerm = searchInput.value.trim();
 
@@ -75,6 +81,8 @@ searchButton.addEventListener('click', async () => {
     displayMovies(movies);
   }
 });
+
+
 searchInput.addEventListener('keydown', async event => {
   if (event.key === 'Enter') {
     const searchTerm = searchInput.value.trim();
