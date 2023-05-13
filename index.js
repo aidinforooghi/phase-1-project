@@ -59,3 +59,11 @@ movies.forEach(async movie => {
     const poster = document.createElement('img');
     poster.src = movie.Poster === 'N/A' ? 'no-poster.jpg' : movie.Poster;
     poster.alt = movie.Title;
+movieCard.appendChild(title);
+    movieCard.appendChild(year);
+    movieCard.appendChild(imdbLink);
+    movieCard.appendChild(poster);
+
+    moviesContainer.appendChild(movieCard);
+  });
+}
