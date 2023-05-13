@@ -28,3 +28,13 @@ async function fetchMovieDetails(imdbID) {
     console.log('Error:', error);
   }
 }
+// Function to display movie data 
+function displayMovies(movies) {
+  moviesContainer.innerHTML = '';
+
+  if (!movies) {
+    const message = document.createElement('p');
+    message.textContent = 'No movies found.';
+    moviesContainer.appendChild(message);
+    return;
+  }
