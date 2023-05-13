@@ -32,3 +32,8 @@ h1 {
 #search-button:hover {
   background-color: #0056b3;
 }
+#movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
