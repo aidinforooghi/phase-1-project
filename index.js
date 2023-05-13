@@ -38,3 +38,24 @@ function displayMovies(movies) {
     moviesContainer.appendChild(message);
     return;
   }
+movies.forEach(async movie => {
+    const movieCard = document.createElement('div');
+    movieCard.classList.add('movie-card');
+
+    const title = document.createElement('h2');
+    title.textContent = movie.Title;
+
+    const movieDetails = await fetchMovieDetails(movie.imdbID);
+
+    const year = document.createElement('p');
+    year.textContent = `Year: ${movie.Year}`;
+
+    const imdbLink = document.createElement('a');
+    imdbLink.textContent = 'IMDb';
+    imdbLink.href = `https://www.imdb.com/title/${movie.imdbID}`;
+    imdbLink.target = '_blank';
+    imdbLink.rel = 'noopener noreferrer';
+
+    const poster = document.createElement('img');
+    poster.src = movie.Poster === 'N/A' ? 'no-poster.jpg' : movie.Poster;
+    poster.alt = movie.Title;
