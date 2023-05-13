@@ -5,3 +5,4 @@ This is a movie database website that allows users to search for movies and view
 ## Features
 
 - Search for movies by title
+- Display search results with movie details
