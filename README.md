@@ -8,3 +8,4 @@ This is a movie database website that allows users to search for movies and view
 - Display search results with movie details
 - Click on a movie to view its detailed information
 - Links to IMDb for more information
+- Responsive design for different screen sizes
