@@ -67,3 +67,11 @@ movieCard.appendChild(title);
     moviesContainer.appendChild(movieCard);
   });
 }
+searchButton.addEventListener('click', async () => {
+  const searchTerm = searchInput.value.trim();
+
+  if (searchTerm !== '') {
+    const movies = await fetchMovies(searchTerm);
+    displayMovies(movies);
+  }
+});
