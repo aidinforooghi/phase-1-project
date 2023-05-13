@@ -67,3 +67,12 @@ h1 {
   margin-bottom: 10px;
   border-radius: 5px;
 }
+/* Loading animation */
+@keyframes loader-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
