@@ -75,3 +75,13 @@ searchButton.addEventListener('click', async () => {
     displayMovies(movies);
   }
 });
+searchInput.addEventListener('keydown', async event => {
+  if (event.key === 'Enter') {
+    const searchTerm = searchInput.value.trim();
+
+    if (searchTerm !== '') {
+      const movies = await fetchMovies(searchTerm);
+      displayMovies(movies);
+    }
+  }
+});
