@@ -2,6 +2,9 @@
 
 This is a movie database website that allows users to search for movies and view detailed information about each movie. It is built using HTML, CSS, and JavaScript.
 
+## Description
+The Movie Database is a web application that allows users to search for movies and view their details. It provides a user-friendly interface to explore a vast collection of movies and get information about their titles, release years, and more.
+
 ## Features
 
 - Search for movies by title
@@ -9,11 +12,6 @@ This is a movie database website that allows users to search for movies and view
 - Click on a movie to view its detailed information
 - Links to IMDb for more information
 - Responsive design for different screen sizes
-
-# Movie Database
-
-## Description
-The Movie Database is a web application that allows users to search for movies and view their details. It provides a user-friendly interface to explore a vast collection of movies and get information about their titles, release years, and more.
 
 ## Installation
 To run the Movie Database locally, follow these steps:
