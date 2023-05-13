@@ -7,3 +7,4 @@ This is a movie database website that allows users to search for movies and view
 - Search for movies by title
 - Display search results with movie details
 - Click on a movie to view its detailed information
+- Links to IMDb for more information
