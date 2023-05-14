@@ -44,28 +44,3 @@ Contributions are welcome! If you'd like to contribute to the Movie Database pro
 
 ## License
 The Movie Database project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
-
-# Movie Database Website
-
-This is a movie database website that allows users to search for movies and view detailed information about each movie. It is built using HTML, CSS, and JavaScript.
-
-## Features
-
-- Search for movies by title
-- Display search results with movie details
-- Click on a movie to view its detailed information
-- Links to IMDb for more information
-- Responsive design for different screen sizes
-
-## Demo
-
-You can see a live demo of the movie database website [here](put-the-live-demo-link-here).
-
-## Getting Started
-
-To run the movie database website locally, follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/movie-database.git
-
