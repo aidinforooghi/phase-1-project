@@ -13,9 +13,13 @@ The Movie Database is a web application that allows users to search for movies a
 - Links to IMDb for more information
 - Responsive design for different screen sizes
 
+## Demo
+
+You can see a live demo of the movie database website [here](https://aidinforooghi.github.io/phase-1-project/).
+
 ## Demo Video
 
-You can see non-technical walkthrough of Movie Database in the browser. [here](https://www.loom.com/share/a724d27cc30b40399336a2e94c5ddf2c).
+You can see non-technical walkthrough of Movie Database in browser [here](https://www.loom.com/share/a724d27cc30b40399336a2e94c5ddf2c).
 
 ## Installation
 To run the Movie Database locally, follow these steps:
